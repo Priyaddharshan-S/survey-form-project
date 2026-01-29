@@ -1,0 +1,89 @@
+/* 1. Style the whole page background */
+body {
+    background-color: #05c46b; /* Green background */
+    font-family: Verdana, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+/* 2. Style the white form container */
+form {
+    background-color: #fff;
+    max-width: 500px;
+    margin: 50px auto; /* Centers the form: 50px top/bottom, auto left/right */
+    padding: 30px 20px;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5); /* Adds the shadow */
+    border-radius: 8px; /* Makes the corners slightly rounded */
+}
+
+/* 3. Space out each question block */
+.form-control {
+    text-align: left;
+    margin-bottom: 25px;
+}
+
+/* 4. Make labels bold and put them on their own line */
+.form-control label {
+    display: block; /* This forces the label to take up the whole line */
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* 5. Style the input boxes AND the dropdown menu */
+.form-control input,
+.form-control select {
+    border: 1px solid #777;
+    border-radius: 4px;
+    font-family: inherit;
+    padding: 10px;
+    display: block;
+    width: 100%; /* Changed to 100% for better alignment */
+    box-sizing: border-box; /* This ensures padding doesn't make the box wider than the form */
+}
+
+/* 6. Style Radio buttons and Checkboxes to stay inline */
+.form-control input[type="radio"] {
+    display: inline-block; /* Keeps the circle next to the text */
+    width: auto;           /* Prevents the circle from stretching to 100% width */
+    margin-right: 10px;    /* Adds a little gap between circle and text */
+}
+
+/* Make sure the inner labels for radios don't act like the main block labels */
+.form-control label > input {
+    margin-bottom: 0;
+}
+
+/* 8. Style the Textarea */
+.form-control textarea {
+    border: 1px solid #777;
+    border-radius: 4px;
+    font-family: inherit;
+    padding: 10px;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    height: 100px; /* Gives it a default height */
+}
+
+/* 9. Style the big Submit Button */
+button {
+    background-color: #05c46b; /* Same green as the background */
+    color: white;
+    border: 1px solid #777;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 21px;
+    font-weight: bold;
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin-top: 20px;
+    cursor: pointer; /* Changes the mouse to a hand icon */
+    transition: background-color 0.3s ease; /* Makes the color change smooth */
+}
+
+/* Hover effect */
+button:hover {
+    background-color: #049e56; /* Slightly darker green when hovering */
+}
